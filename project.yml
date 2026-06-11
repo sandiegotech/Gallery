@@ -1,0 +1,40 @@
+name: Gallery
+options:
+  bundleIdPrefix: com.sdit
+  deploymentTarget:
+    tvOS: "17.0"
+  createIntermediateGroups: true
+targets:
+  Gallery:
+    type: application
+    platform: tvOS
+    sources:
+      - path: Gallery/Sources
+      - path: Gallery/Resources
+        buildPhase: resources
+    info:
+      path: Gallery/Info.plist
+      properties:
+        CFBundleDisplayName: Gallery
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        ITSAppUsesNonExemptEncryption: false
+        UIAppFonts:
+          - EBGaramond-Regular.ttf
+          - EBGaramond-Medium.ttf
+          - EBGaramond-Italic.ttf
+          - IBMPlexSans-Regular.ttf
+          - IBMPlexSans-Medium.ttf
+          - IBMPlexMono-Regular.ttf
+          - IBMPlexMono-Medium.ttf
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sdit.gallery
+        CURRENT_PROJECT_VERSION: 2
+        MARKETING_VERSION: "1.0"
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "3"
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 4VSTWG394B
+        ASSETCATALOG_COMPILER_APPICON_NAME: App Icon & Top Shelf Image
+        ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME: LaunchImage

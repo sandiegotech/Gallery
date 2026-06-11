@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BCEAB80B9F05F78BB09C97 /* clair-de-lune.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 05D4B61B539F00E0082B95DE /* clair-de-lune.mp3 */; };
+		0898CE412317BEFD6E751640 /* IBMPlexMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63628C9DC83DCC85F4B06CC0 /* IBMPlexMono-Medium.ttf */; };
+		098DB5309992589AC5AC4663 /* SDITTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71893B6544F17D61714A90CF /* SDITTheme.swift */; };
+		1AE3B1A35F4CAF753A7BE86D /* umi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F648B68BB78363ADA9826124 /* umi.mp3 */; };
+		2257C53003376D37E9FA7B3C /* harvesters.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6599B67498A2E72B34CAC89A /* harvesters.jpg */; };
+		27B0F8BCAC6D80E7228FBA8D /* water-lilies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0598DA6907E1035ADD074AE7 /* water-lilies.jpg */; };
+		2BFFCF8551CEB6921BA0049D /* WallBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B163B5202F35DD43C734D4F7 /* WallBackground.swift */; };
+		379174F63DA677F880717C1B /* young-woman-pitcher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE6743E868CA0B739CCFF31 /* young-woman-pitcher.jpg */; };
+		3CE9552BFE2F0CBF8873913E /* gnossienne-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E102ED0C00EC90CF6CDEBD0C /* gnossienne-3.mp3 */; };
+		3F9339EBE6B625275B9EBA3D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662395CE1C923D87922C2032 /* Models.swift */; };
+		4376A32581021F5312501EE4 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 125EA26FDEEA021C0246F6CB /* IBMPlexSans-Medium.ttf */; };
+		46D60975A7F1662791B0536A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D27C41136D127D2990A8025 /* Assets.xcassets */; };
+		46EB1BD68C683860BA169FA3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7753D201C0546F56FBAF9BF /* SettingsView.swift */; };
+		476FE555F5A805009E5269E5 /* ExhibitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E12BE13D4DB2DE269D1346 /* ExhibitionView.swift */; };
+		4A8D183422481DA87D91B28C /* madame-x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3426B59EBB1C2628B9A3BB1F /* madame-x.jpg */; };
+		4B1FDD1954880F57756AC685 /* moulin-rouge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5A5B11379A7A583653A96C2 /* moulin-rouge.jpg */; };
+		4D5F6CCD485CEA72C14A118C /* EBGaramond-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24EC11AE4C407AB942BBB0DC /* EBGaramond-Italic.ttf */; };
+		52E9857579B475D8F658823A /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4FB5DF461506CD318A27EA /* MusicPlayer.swift */; };
+		590470DE82DD7BF094382377 /* EBGaramond-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0802E5CDF59C056DD22A8A43 /* EBGaramond-Medium.ttf */; };
+		7151147B80F2CCA6FC5F3F23 /* sudden-shower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7384619D84529DA914A8AFE0 /* sudden-shower.jpg */; };
+		73BF8F447244B81496E528EF /* ContentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2DB392D0FF432E27F4D5A8 /* ContentStore.swift */; };
+		75716F67D31880CB939AA117 /* EBGaramond-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEF6D896BC47DCDA9F9ACC43 /* EBGaramond-Regular.ttf */; };
+		8584A3833C17B361C5DFCC0A /* musicians.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FE16B22842122A8A1381D9B /* musicians.jpg */; };
+		85FAAB7AC8A12F975501ECD7 /* flow-my-tears.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8308E5AC3DF35B827F04733 /* flow-my-tears.mp3 */; };
+		919085FF260FCBF79A2C364D /* plum-garden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E9090F9DCBF1BEA0C921C6B /* plum-garden.jpg */; };
+		9CF444B0C13A2D76516F59CD /* chat-noir.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1CA9954DF4FA07B4D76D7322 /* chat-noir.jpg */; };
+		A68FC10B9F5781A69DA97DEF /* FramedArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E4FAF6B038E83BF77699A /* FramedArtworkView.swift */; };
+		B0D2BAC53A5AE0B3CDE74C1D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FA7C8CAF70D0E75C0CE91C7 /* manifest.json */; };
+		B9CEAB657C5D1777AC23276D /* ArtworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF9F019073B94ED576E8DE9 /* ArtworkDetailView.swift */; };
+		BA16284BC1EFA8CE432B81F0 /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 213C860A547948CEAF711D60 /* IBMPlexSans-Regular.ttf */; };
+		BDB34DE49222F9E32E793F08 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270684868AC701B3D58D842E /* HomeView.swift */; };
+		BE0379425F133576DFF888D8 /* divan-japonais.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 536798E348557F6E8A7C30E4 /* divan-japonais.jpg */; };
+		C6FD2E0801E6A5BB58526940 /* mada-primavesi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6103F66069302A5B0461E960 /* mada-primavesi.jpg */; };
+		D51544B40E927ACF037BA71B /* gymnopedie-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58246F8D3B1DEDFAA401E6E7 /* gymnopedie-1.mp3 */; };
+		D54AD7DA19BA6AFE086B556C /* PlacardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD201FD97C72107AC1A69E /* PlacardView.swift */; };
+		D7A0D1EF1DC5A619426F9A1E /* wheat-field.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 674621328860BC4468BA2B5E /* wheat-field.jpg */; };
+		D9DB3B3B7B4B4086FA465211 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8542BD609558AB511FFE66A /* SettingsStore.swift */; };
+		E13E19CAAC1B305F3CFE6874 /* mucha-zodiac.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68D8FDA735E0A7CD27B6B517 /* mucha-zodiac.jpg */; };
+		E15EC3C657FDC1AAC2DA95B5 /* red-fuji.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0F1FD1E21A9AEDDE15F6E2D /* red-fuji.jpg */; };
+		E2F92309EA6D3822A08DE6EC /* IBMPlexMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB7B8C1E56D27A6E5615318A /* IBMPlexMono-Regular.ttf */; };
+		E4864045C601BF81726650DB /* great-wave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D307F085E151ED09E063B8DF /* great-wave.jpg */; };
+		EB471EBF7909A60CC58C59C4 /* faure-pavane.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8523E0869DB26D6C4F5EB46 /* faure-pavane.mp3 */; };
+		EE162A2AD64B2693F7204A71 /* je-te-veux.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9397AE3FCF961D320A553C08 /* je-te-veux.mp3 */; };
+		F11B3A2E83AF4C836943012B /* GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9374DAE8F3F04AE1A3850 /* GalleryApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		026E4FAF6B038E83BF77699A /* FramedArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramedArtworkView.swift; sourceTree = "<group>"; };
+		0598DA6907E1035ADD074AE7 /* water-lilies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "water-lilies.jpg"; sourceTree = "<group>"; };
+		05D4B61B539F00E0082B95DE /* clair-de-lune.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "clair-de-lune.mp3"; sourceTree = "<group>"; };
+		0802E5CDF59C056DD22A8A43 /* EBGaramond-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EBGaramond-Medium.ttf"; sourceTree = "<group>"; };
+		0C2DB392D0FF432E27F4D5A8 /* ContentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStore.swift; sourceTree = "<group>"; };
+		0FE16B22842122A8A1381D9B /* musicians.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = musicians.jpg; sourceTree = "<group>"; };
+		125EA26FDEEA021C0246F6CB /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
+		1CA9954DF4FA07B4D76D7322 /* chat-noir.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "chat-noir.jpg"; sourceTree = "<group>"; };
+		1FAD201FD97C72107AC1A69E /* PlacardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacardView.swift; sourceTree = "<group>"; };
+		213C860A547948CEAF711D60 /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
+		24EC11AE4C407AB942BBB0DC /* EBGaramond-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EBGaramond-Italic.ttf"; sourceTree = "<group>"; };
+		270684868AC701B3D58D842E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2E9090F9DCBF1BEA0C921C6B /* plum-garden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "plum-garden.jpg"; sourceTree = "<group>"; };
+		2FA7C8CAF70D0E75C0CE91C7 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		3426B59EBB1C2628B9A3BB1F /* madame-x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "madame-x.jpg"; sourceTree = "<group>"; };
+		4D4FB5DF461506CD318A27EA /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		536798E348557F6E8A7C30E4 /* divan-japonais.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "divan-japonais.jpg"; sourceTree = "<group>"; };
+		58246F8D3B1DEDFAA401E6E7 /* gymnopedie-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "gymnopedie-1.mp3"; sourceTree = "<group>"; };
+		6103F66069302A5B0461E960 /* mada-primavesi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mada-primavesi.jpg"; sourceTree = "<group>"; };
+		63628C9DC83DCC85F4B06CC0 /* IBMPlexMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Medium.ttf"; sourceTree = "<group>"; };
+		6599B67498A2E72B34CAC89A /* harvesters.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harvesters.jpg; sourceTree = "<group>"; };
+		65E12BE13D4DB2DE269D1346 /* ExhibitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionView.swift; sourceTree = "<group>"; };
+		662395CE1C923D87922C2032 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		674621328860BC4468BA2B5E /* wheat-field.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wheat-field.jpg"; sourceTree = "<group>"; };
+		68D8FDA735E0A7CD27B6B517 /* mucha-zodiac.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mucha-zodiac.jpg"; sourceTree = "<group>"; };
+		6D27C41136D127D2990A8025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71893B6544F17D61714A90CF /* SDITTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDITTheme.swift; sourceTree = "<group>"; };
+		7384619D84529DA914A8AFE0 /* sudden-shower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sudden-shower.jpg"; sourceTree = "<group>"; };
+		856B6B02DFD606C960F3CBB0 /* Gallery.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9397AE3FCF961D320A553C08 /* je-te-veux.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "je-te-veux.mp3"; sourceTree = "<group>"; };
+		9BF9F019073B94ED576E8DE9 /* ArtworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkDetailView.swift; sourceTree = "<group>"; };
+		B163B5202F35DD43C734D4F7 /* WallBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallBackground.swift; sourceTree = "<group>"; };
+		B5A5B11379A7A583653A96C2 /* moulin-rouge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "moulin-rouge.jpg"; sourceTree = "<group>"; };
+		B8542BD609558AB511FFE66A /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		C7753D201C0546F56FBAF9BF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CFE6743E868CA0B739CCFF31 /* young-woman-pitcher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "young-woman-pitcher.jpg"; sourceTree = "<group>"; };
+		D0F1FD1E21A9AEDDE15F6E2D /* red-fuji.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red-fuji.jpg"; sourceTree = "<group>"; };
+		D307F085E151ED09E063B8DF /* great-wave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "great-wave.jpg"; sourceTree = "<group>"; };
+		D3D9374DAE8F3F04AE1A3850 /* GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApp.swift; sourceTree = "<group>"; };
+		D8308E5AC3DF35B827F04733 /* flow-my-tears.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "flow-my-tears.mp3"; sourceTree = "<group>"; };
+		DB7B8C1E56D27A6E5615318A /* IBMPlexMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Regular.ttf"; sourceTree = "<group>"; };
+		E102ED0C00EC90CF6CDEBD0C /* gnossienne-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "gnossienne-3.mp3"; sourceTree = "<group>"; };
+		EEF6D896BC47DCDA9F9ACC43 /* EBGaramond-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EBGaramond-Regular.ttf"; sourceTree = "<group>"; };
+		F648B68BB78363ADA9826124 /* umi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = umi.mp3; sourceTree = "<group>"; };
+		F8523E0869DB26D6C4F5EB46 /* faure-pavane.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "faure-pavane.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		22914B0D254D2FE6163E6A5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				856B6B02DFD606C960F3CBB0 /* Gallery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25FA98A29DF460CFEE62BB72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9BF9F019073B94ED576E8DE9 /* ArtworkDetailView.swift */,
+				65E12BE13D4DB2DE269D1346 /* ExhibitionView.swift */,
+				026E4FAF6B038E83BF77699A /* FramedArtworkView.swift */,
+				270684868AC701B3D58D842E /* HomeView.swift */,
+				1FAD201FD97C72107AC1A69E /* PlacardView.swift */,
+				71893B6544F17D61714A90CF /* SDITTheme.swift */,
+				C7753D201C0546F56FBAF9BF /* SettingsView.swift */,
+				B163B5202F35DD43C734D4F7 /* WallBackground.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2857C421B62DD4A99405E8EF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				24EC11AE4C407AB942BBB0DC /* EBGaramond-Italic.ttf */,
+				0802E5CDF59C056DD22A8A43 /* EBGaramond-Medium.ttf */,
+				EEF6D896BC47DCDA9F9ACC43 /* EBGaramond-Regular.ttf */,
+				63628C9DC83DCC85F4B06CC0 /* IBMPlexMono-Medium.ttf */,
+				DB7B8C1E56D27A6E5615318A /* IBMPlexMono-Regular.ttf */,
+				125EA26FDEEA021C0246F6CB /* IBMPlexSans-Medium.ttf */,
+				213C860A547948CEAF711D60 /* IBMPlexSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5027916E99EFDBCD647008ED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0C2DB392D0FF432E27F4D5A8 /* ContentStore.swift */,
+				4D4FB5DF461506CD318A27EA /* MusicPlayer.swift */,
+				B8542BD609558AB511FFE66A /* SettingsStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5EB9C5A3515DC081DB5D03FB = {
+			isa = PBXGroup;
+			children = (
+				733A601112EAA994CBC8420A /* Gallery */,
+				22914B0D254D2FE6163E6A5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		733A601112EAA994CBC8420A /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				7E115C05965CA536A67AB0F5 /* Resources */,
+				EDC41095D00108C81F1D403F /* Sources */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		7E115C05965CA536A67AB0F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D27C41136D127D2990A8025 /* Assets.xcassets */,
+				2FA7C8CAF70D0E75C0CE91C7 /* manifest.json */,
+				2857C421B62DD4A99405E8EF /* Fonts */,
+				E47D5315EFA1F890FA022FA5 /* Media */,
+				E5D95E3D3EA4C3F0E65F93D4 /* Music */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E47D5315EFA1F890FA022FA5 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				1CA9954DF4FA07B4D76D7322 /* chat-noir.jpg */,
+				536798E348557F6E8A7C30E4 /* divan-japonais.jpg */,
+				D307F085E151ED09E063B8DF /* great-wave.jpg */,
+				6599B67498A2E72B34CAC89A /* harvesters.jpg */,
+				6103F66069302A5B0461E960 /* mada-primavesi.jpg */,
+				3426B59EBB1C2628B9A3BB1F /* madame-x.jpg */,
+				B5A5B11379A7A583653A96C2 /* moulin-rouge.jpg */,
+				68D8FDA735E0A7CD27B6B517 /* mucha-zodiac.jpg */,
+				0FE16B22842122A8A1381D9B /* musicians.jpg */,
+				2E9090F9DCBF1BEA0C921C6B /* plum-garden.jpg */,
+				D0F1FD1E21A9AEDDE15F6E2D /* red-fuji.jpg */,
+				7384619D84529DA914A8AFE0 /* sudden-shower.jpg */,
+				0598DA6907E1035ADD074AE7 /* water-lilies.jpg */,
+				674621328860BC4468BA2B5E /* wheat-field.jpg */,
+				CFE6743E868CA0B739CCFF31 /* young-woman-pitcher.jpg */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		E5D95E3D3EA4C3F0E65F93D4 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				05D4B61B539F00E0082B95DE /* clair-de-lune.mp3 */,
+				F8523E0869DB26D6C4F5EB46 /* faure-pavane.mp3 */,
+				D8308E5AC3DF35B827F04733 /* flow-my-tears.mp3 */,
+				E102ED0C00EC90CF6CDEBD0C /* gnossienne-3.mp3 */,
+				58246F8D3B1DEDFAA401E6E7 /* gymnopedie-1.mp3 */,
+				9397AE3FCF961D320A553C08 /* je-te-veux.mp3 */,
+				F648B68BB78363ADA9826124 /* umi.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		EDC41095D00108C81F1D403F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E06D209C6BF400FE5C960 /* App */,
+				EDDEA42F2634CE4C3C655B20 /* Models */,
+				5027916E99EFDBCD647008ED /* Services */,
+				25FA98A29DF460CFEE62BB72 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EDDEA42F2634CE4C3C655B20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				662395CE1C923D87922C2032 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA6E06D209C6BF400FE5C960 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D3D9374DAE8F3F04AE1A3850 /* GalleryApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAED116F3BDF61B6A3AA69A9 /* Gallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A70F4392D344126EDD8375 /* Build configuration list for PBXNativeTarget "Gallery" */;
+			buildPhases = (
+				9F1CD1116CFC82C5BE8CCEA9 /* Sources */,
+				9872966D66619AC44ED8858E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gallery;
+			packageProductDependencies = (
+			);
+			productName = Gallery;
+			productReference = 856B6B02DFD606C960F3CBB0 /* Gallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B753943FF222CCD25F0C3D8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DAED116F3BDF61B6A3AA69A9 = {
+						DevelopmentTeam = 4VSTWG394B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ED6C7E32F2386EB728B480D6 /* Build configuration list for PBXProject "Gallery" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5EB9C5A3515DC081DB5D03FB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 22914B0D254D2FE6163E6A5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAED116F3BDF61B6A3AA69A9 /* Gallery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9872966D66619AC44ED8858E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D60975A7F1662791B0536A /* Assets.xcassets in Resources */,
+				4D5F6CCD485CEA72C14A118C /* EBGaramond-Italic.ttf in Resources */,
+				590470DE82DD7BF094382377 /* EBGaramond-Medium.ttf in Resources */,
+				75716F67D31880CB939AA117 /* EBGaramond-Regular.ttf in Resources */,
+				0898CE412317BEFD6E751640 /* IBMPlexMono-Medium.ttf in Resources */,
+				E2F92309EA6D3822A08DE6EC /* IBMPlexMono-Regular.ttf in Resources */,
+				4376A32581021F5312501EE4 /* IBMPlexSans-Medium.ttf in Resources */,
+				BA16284BC1EFA8CE432B81F0 /* IBMPlexSans-Regular.ttf in Resources */,
+				9CF444B0C13A2D76516F59CD /* chat-noir.jpg in Resources */,
+				00BCEAB80B9F05F78BB09C97 /* clair-de-lune.mp3 in Resources */,
+				BE0379425F133576DFF888D8 /* divan-japonais.jpg in Resources */,
+				EB471EBF7909A60CC58C59C4 /* faure-pavane.mp3 in Resources */,
+				85FAAB7AC8A12F975501ECD7 /* flow-my-tears.mp3 in Resources */,
+				3CE9552BFE2F0CBF8873913E /* gnossienne-3.mp3 in Resources */,
+				E4864045C601BF81726650DB /* great-wave.jpg in Resources */,
+				D51544B40E927ACF037BA71B /* gymnopedie-1.mp3 in Resources */,
+				2257C53003376D37E9FA7B3C /* harvesters.jpg in Resources */,
+				EE162A2AD64B2693F7204A71 /* je-te-veux.mp3 in Resources */,
+				C6FD2E0801E6A5BB58526940 /* mada-primavesi.jpg in Resources */,
+				4A8D183422481DA87D91B28C /* madame-x.jpg in Resources */,
+				B0D2BAC53A5AE0B3CDE74C1D /* manifest.json in Resources */,
+				4B1FDD1954880F57756AC685 /* moulin-rouge.jpg in Resources */,
+				E13E19CAAC1B305F3CFE6874 /* mucha-zodiac.jpg in Resources */,
+				8584A3833C17B361C5DFCC0A /* musicians.jpg in Resources */,
+				919085FF260FCBF79A2C364D /* plum-garden.jpg in Resources */,
+				E15EC3C657FDC1AAC2DA95B5 /* red-fuji.jpg in Resources */,
+				7151147B80F2CCA6FC5F3F23 /* sudden-shower.jpg in Resources */,
+				1AE3B1A35F4CAF753A7BE86D /* umi.mp3 in Resources */,
+				27B0F8BCAC6D80E7228FBA8D /* water-lilies.jpg in Resources */,
+				D7A0D1EF1DC5A619426F9A1E /* wheat-field.jpg in Resources */,
+				379174F63DA677F880717C1B /* young-woman-pitcher.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F1CD1116CFC82C5BE8CCEA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CEAB657C5D1777AC23276D /* ArtworkDetailView.swift in Sources */,
+				73BF8F447244B81496E528EF /* ContentStore.swift in Sources */,
+				476FE555F5A805009E5269E5 /* ExhibitionView.swift in Sources */,
+				A68FC10B9F5781A69DA97DEF /* FramedArtworkView.swift in Sources */,
+				F11B3A2E83AF4C836943012B /* GalleryApp.swift in Sources */,
+				BDB34DE49222F9E32E793F08 /* HomeView.swift in Sources */,
+				3F9339EBE6B625275B9EBA3D /* Models.swift in Sources */,
+				52E9857579B475D8F658823A /* MusicPlayer.swift in Sources */,
+				D54AD7DA19BA6AFE086B556C /* PlacardView.swift in Sources */,
+				098DB5309992589AC5AC4663 /* SDITTheme.swift in Sources */,
+				D9DB3B3B7B4B4086FA465211 /* SettingsStore.swift in Sources */,
+				46EB1BD68C683860BA169FA3 /* SettingsView.swift in Sources */,
+				2BFFCF8551CEB6921BA0049D /* WallBackground.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4D2BFE712BD0DEE58DA73E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
+		9DF91DE3410D6AB922441C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 4VSTWG394B;
+				INFOPLIST_FILE = Gallery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdit.gallery;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		C128FBE577E74018E390C951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 4VSTWG394B;
+				INFOPLIST_FILE = Gallery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdit.gallery;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		C8B6D8A8E021BBEF72EDBF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83A70F4392D344126EDD8375 /* Build configuration list for PBXNativeTarget "Gallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF91DE3410D6AB922441C3D /* Debug */,
+				C128FBE577E74018E390C951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ED6C7E32F2386EB728B480D6 /* Build configuration list for PBXProject "Gallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8B6D8A8E021BBEF72EDBF57 /* Debug */,
+				4D2BFE712BD0DEE58DA73E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B753943FF222CCD25F0C3D8E /* Project object */;
+}

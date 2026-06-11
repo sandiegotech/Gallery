@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "collections": [
+    {
+      "id": "eclectic",
+      "title": "The Mix",
+      "subtitle": "Five centuries, shuffled — wherever the night takes you",
+      "coverArtworkID": "wheat-field"
+    },
+    {
+      "id": "museum",
+      "title": "The Grand Tour",
+      "subtitle": "Old-master paintings, spotlit one at a time",
+      "coverArtworkID": "water-lilies"
+    },
+    {
+      "id": "street",
+      "title": "Art of the Street",
+      "subtitle": "Posters that turned the walls of Paris into a gallery",
+      "coverArtworkID": "moulin-rouge"
+    },
+    {
+      "id": "japan",
+      "title": "The Floating World",
+      "subtitle": "Japanese prints that changed how the West saw",
+      "coverArtworkID": "great-wave"
+    }
+  ],
+  "artworks": [
+    {
+      "id": "wheat-field",
+      "title": "Wheat Field with Cypresses",
+      "artist": "Vincent van Gogh",
+      "year": "1889",
+      "medium": "Oil on canvas",
+      "summary": "Painted from the grounds of the asylum at Saint-Rémy, in the same feverish summer that produced The Starry Night.",
+      "story": "Van Gogh painted this view from the walled field below the asylum of Saint-Paul-de-Mausole, where he had committed himself in May 1889. He considered it one of his best summer canvases — the cypress, he wrote to his brother Theo, was 'as beautiful in line and proportion as an Egyptian obelisk.'\n\nEverything in the picture moves: the wheat rolls, the olives shiver, the clouds curl like surf. It is the daylight twin of The Starry Night, painted in the same weeks from nearly the same spot — proof that what he saw at night he also saw at noon.",
+      "pairing": "Satie wrote his first Gymnopédie in Paris the year before this canvas — the same stillness underneath the same restlessness.",
+      "image": "wheat-field.jpg",
+      "frameStyle": "gilded",
+      "collections": ["museum"],
+      "music": {
+        "title": "Gymnopédie No. 1",
+        "composer": "Erik Satie",
+        "year": "1888",
+        "file": "gymnopedie-1.mp3",
+        "credit": "Boston Symphony Orchestra, cond. Koussevitzky (1930) — Internet Archive, 78rpm collection"
+      },
+      "credit": "The Metropolitan Museum of Art, Open Access (public domain)"
+    },
+    {
+      "id": "water-lilies",
+      "title": "Water Lilies",
+      "artist": "Claude Monet",
+      "year": "1906",
+      "medium": "Oil on canvas",
+      "summary": "No horizon, no bank, no sky — only the surface of Monet's pond at Giverny, holding all three at once.",
+      "story": "By 1906 Monet had stopped painting landscapes and started painting reflection itself. He had built the pond at Giverny with his own money and a diverted river, then spent three decades painting almost nothing else.\n\nNotice what is missing: there is no horizon line, no shore, no sky — except the sky that floats upside down between the lily pads. Monet called the series his 'water landscapes' and complained they were 'an obsession.' The obsession produced around 250 canvases and rewired painting on the way to abstraction.",
+      "pairing": "Debussy published Clair de Lune a year before this canvas — impressionism in sound and paint, made by countrymen who dissolved their subjects the same way.",
+      "image": "water-lilies.jpg",
+      "frameStyle": "gilded",
+      "collections": ["museum"],
+      "music": {
+        "title": "Clair de Lune",
+        "composer": "Claude Debussy",
+        "year": "1905",
+        "file": "clair-de-lune.mp3",
+        "credit": "Internet Archive"
+      },
+      "credit": "Art Institute of Chicago / Wikimedia Commons (public domain)"
+    },
+    {
+      "id": "harvesters",
+      "title": "The Harvesters",
+      "artist": "Pieter Bruegel the Elder",
+      "year": "1565",
+      "medium": "Oil on wood",
+      "summary": "Peasants mowing, eating, and napping under a pear tree — one of the first paintings where ordinary life, not religion, is the subject.",
+      "story": "This panel belonged to a cycle of six paintings of the months, made for the house of a wealthy Antwerp merchant. It shows late summer: wheat being scythed, bread and porridge under the pear tree, one harvester flat on his back, asleep with his mouth open.\n\nWhat made it revolutionary is what it ignores. There is no saint, no myth, no king — the landscape and the labor are the whole story. Art historians point to this picture as a hinge in Western art: the moment when watching ordinary people live became enough.",
+      "pairing": "Dowland's lute music belongs to the same world, a few decades on — music for rooms lit by the same candles.",
+      "image": "harvesters.jpg",
+      "frameStyle": "classic",
+      "collections": ["museum"],
+      "music": {
+        "title": "Flow My Tears",
+        "composer": "John Dowland",
+        "year": "1600",
+        "file": "flow-my-tears.mp3",
+        "credit": "Alfred Deller & Desmond Dupré — Internet Archive, 78rpm collection"
+      },
+      "credit": "The Metropolitan Museum of Art, Open Access (public domain)"
+    },
+    {
+      "id": "musicians",
+      "title": "The Musicians",
+      "artist": "Caravaggio",
+      "year": "1597",
+      "medium": "Oil on canvas",
+      "summary": "Four boys tuning up before a concert that never starts. The second face from the right is Caravaggio himself.",
+      "story": "Caravaggio painted this for Cardinal del Monte, his first great patron, who kept the young painter in his palace and his concerts well staffed. It is not a portrait of a performance but of the moment before one — strings being tuned, music being checked, nobody yet playing.\n\nThe lutenist's eyes are wet, the costumes are vaguely classical, and the cornetto player looking out at us is Caravaggio's own face. Within a few years he would abandon this softness for the violent light and darkness that made him famous, but here he is still — almost — a musician among musicians.",
+      "pairing": "Dowland published Flow My Tears within three years of this canvas. This is, as exactly as we can manage, what these boys were about to play.",
+      "image": "musicians.jpg",
+      "frameStyle": "gilded",
+      "collections": ["museum"],
+      "music": {
+        "title": "Flow My Tears",
+        "composer": "John Dowland",
+        "year": "1600",
+        "file": "flow-my-tears.mp3",
+        "credit": "Alfred Deller & Desmond Dupré — Internet Archive, 78rpm collection"
+      },
+      "credit": "The Metropolitan Museum of Art, Open Access (public domain)"
+    },
+    {
+      "id": "young-woman-pitcher",
+      "title": "Young Woman with a Water Pitcher",
+      "artist": "Johannes Vermeer",
+      "year": "ca. 1662",
+      "medium": "Oil on canvas",
+      "summary": "Morning light through leaded glass, caught mid-gesture. One of only about thirty-six Vermeers in existence.",
+      "story": "A woman opens a window with one hand and holds a silver pitcher with the other, suspended between two small actions on an ordinary morning in Delft. Nothing happens — and the nothing is the point. Vermeer slowed domestic life down until it became sacred.\n\nLook at the light: it comes through the glass, lands on the white linen hood, drops into the brass basin, and bounces blue from the tablecloth onto the pitcher's underside. Vermeer painted perhaps two canvases a year and died poor; this was the first of his paintings to ever reach America.",
+      "pairing": "A lute song from the previous generation — the kind of music a Delft household with a virginal in the parlor would have known by heart.",
+      "image": "young-woman-pitcher.jpg",
+      "frameStyle": "classic",
+      "collections": ["museum"],
+      "music": {
+        "title": "Flow My Tears",
+        "composer": "John Dowland",
+        "year": "1600",
+        "file": "flow-my-tears.mp3",
+        "credit": "Alfred Deller & Desmond Dupré — Internet Archive, 78rpm collection"
+      },
+      "credit": "The Metropolitan Museum of Art, Open Access (public domain)"
+    },
+    {
+      "id": "madame-x",
+      "title": "Madame X (Madame Pierre Gautreau)",
+      "artist": "John Singer Sargent",
+      "year": "1884",
+      "medium": "Oil on canvas",
+      "summary": "The portrait that scandalized Paris. Sargent later called it 'the best thing I have done' — after it ruined his career there.",
+      "story": "Virginie Gautreau was an American-born society beauty in Paris, famous for her lavender powder and her profile. Sargent pursued her for the commission, chasing prestige; what he got was a scandal. At the 1884 Salon, the dress strap he had painted slipping off her right shoulder caused such an uproar that her family begged him to withdraw the painting.\n\nHe repainted the strap upright, kept the canvas in his studio for thirty years, and finally sold it to the Met on one condition — that the museum disguise her name. The pose, the profile, the black satin against that powdered skin: what scandalized one century became the swagger portrait every century since has imitated.",
+      "pairing": "Fauré's Pavane premiered in the same Paris these two scandalized, three years later — elegant, cool, and slightly dangerous.",
+      "image": "madame-x.jpg",
+      "frameStyle": "gilded",
+      "collections": ["museum"],
+      "music": {
+        "title": "Pavane, Op. 50",
+        "composer": "Gabriel Fauré",
+        "year": "1887",
+        "file": "faure-pavane.mp3",
+        "credit": "Internet Archive"
+      },
+      "credit": "The Metropolitan Museum of Art, Open Access (public domain)"
+    },
+    {
+      "id": "mada-primavesi",
+      "title": "Mäda Primavesi",
+      "artist": "Gustav Klimt",
+      "year": "1912",
+      "medium": "Oil on canvas",
+      "summary": "A nine-year-old stares you down from a meadow of pattern. Klimt almost never painted children — Mäda made him.",
+      "story": "Mäda Primavesi was nine when Klimt painted her, the daughter of a Viennese banker and a former actress who were among his most devoted patrons. Klimt made dozens of preparatory sketches trying to find the pose; Mäda, by her own later account, simply stood like that, and he gave up trying to change her.\n\nThe result is one of the most self-possessed children in the history of portraiture — feet planted, hands behind her back, dead-level gaze, the whole shimmering Secession garden flattening into wallpaper behind her. She lived to be ninety-six and never stopped sounding like the girl in the picture.",
+      "pairing": "Satie's Gnossiennes float in the same perfumed, slightly off-kilter air as Klimt's Vienna — beauty with one eyebrow raised.",
+      "image": "mada-primavesi.jpg",
+      "frameStyle": "modern",
+      "collections": ["museum"],
+      "music": {
+        "title": "Gnossienne No. 3",
+        "composer": "Erik Satie",
+        "year": "1890",
+        "file": "gnossienne-3.mp3",
+        "credit": "Gaby Casadesus — Internet Archive, 78rpm collection"
+      },
+      "credit": "The Metropolitan Museum of Art, Open Access (public domain)"
+    },
+    {
+      "id": "moulin-rouge",
+      "title": "Moulin Rouge: La Goulue",
+      "artist": "Henri de Toulouse-Lautrec",
+      "year": "1891",
+      "medium": "Color lithograph poster",
+      "summary": "Lautrec's first poster — three thousand copies pasted across Paris overnight, and he woke up famous.",
+      "story": "The Moulin Rouge commissioned this from a twenty-six-year-old painter who had never made a poster. Lautrec drew the dancer La Goulue — 'The Glutton,' queen of the can-can — mid-kick, with her partner Valentin le Désossé ('the Boneless') as a grey ghost in the foreground and the audience reduced to a black paper-cut frieze.\n\nIt went up on walls and hoardings all over Paris in December 1891 and changed everything: advertising became art, and the street became a gallery. Collectors followed the paste crews at night and peeled the posters off the walls before the glue dried.",
+      "pairing": "Satie's Je te veux is a cabaret waltz from the same Montmartre — music La Goulue could have danced to.",
+      "image": "moulin-rouge.jpg",
+      "frameStyle": "float",
+      "collections": ["street"],
+      "music": {
+        "title": "Je te veux",
+        "composer": "Erik Satie",
+        "year": "1903",
+        "file": "je-te-veux.mp3",
+        "credit": "Internet Archive"
+      },
+      "credit": "Wikimedia Commons (public domain)"
+    },
+    {
+      "id": "divan-japonais",
+      "title": "Divan Japonais",
+      "artist": "Henri de Toulouse-Lautrec",
+      "year": "1893",
+      "medium": "Color lithograph poster",
+      "summary": "Jane Avril in black watches a singer who has been cropped out of her own poster — you know her only by the long black gloves.",
+      "story": "The Divan Japonais was a small café-concert done up in fashionable fake-Japanese style. Lautrec's poster for it pulls a joke that still lands: the star on stage, the singer Yvette Guilbert, has her head sliced off by the top edge. Parisians recognized her instantly anyway — the long black gloves were her trademark.\n\nThe real subject is the audience: the dancer Jane Avril, off-duty in black, and the critic Édouard Dujardin leering beside her. The flat color, the cropped composition, the silhouette — all of it lifted straight from the Japanese prints flooding Paris, repaid to the city as advertising.",
+      "pairing": "Satie's Je te veux — written for a café-concert singer a few doors up the hill in Montmartre.",
+      "image": "divan-japonais.jpg",
+      "frameStyle": "float",
+      "collections": ["street"],
+      "music": {
+        "title": "Je te veux",
+        "composer": "Erik Satie",
+        "year": "1903",
+        "file": "je-te-veux.mp3",
+        "credit": "Internet Archive"
+      },
+      "credit": "Wikimedia Commons (public domain)"
+    },
+    {
+      "id": "chat-noir",
+      "title": "Tournée du Chat Noir",
+      "artist": "Théophile-Alexandre Steinlen",
+      "year": "1896",
+      "medium": "Color lithograph poster",
+      "summary": "The most famous cat in art history, advertising the touring company of Montmartre's first cabaret.",
+      "story": "Le Chat Noir was the original cabaret — a Montmartre room where poets, composers, and painters performed for each other and a paying crowd of slumming bourgeois. When its impresario Rodolphe Salis took the show on tour in 1896, Steinlen drew this gaunt black cat with a red halo, equal parts alley animal and Egyptian god.\n\nThe poster outlived the cabaret, the tour, and everyone involved; it may be the most reproduced image ever printed in France. It earns its place in any gallery of street art honestly — it was made to be glued to a wall and shout.",
+      "pairing": "Erik Satie was the Chat Noir's house pianist in the late 1880s. This is, quite literally, the music this poster was advertising.",
+      "image": "chat-noir.jpg",
+      "frameStyle": "float",
+      "collections": ["street"],
+      "music": {
+        "title": "Gymnopédie No. 1",
+        "composer": "Erik Satie",
+        "year": "1888",
+        "file": "gymnopedie-1.mp3",
+        "credit": "Boston Symphony Orchestra, cond. Koussevitzky (1930) — Internet Archive, 78rpm collection"
+      },
+      "credit": "Wikimedia Commons (public domain)"
+    },
+    {
+      "id": "mucha-zodiac",
+      "title": "Zodiac (La Plume)",
+      "artist": "Alphonse Mucha",
+      "year": "1896",
+      "medium": "Color lithograph",
+      "summary": "A calendar design that became the defining image of Art Nouveau — the profile, the halo of stars, the impossible hair.",
+      "story": "Mucha designed this as a calendar for his printer, Champenois; the art magazine La Plume liked it so much it bought the design for its own calendar, and the image simply never went away. The woman's profile sits inside a halo ringed with the twelve signs of the zodiac, her jewelry half Byzantine, her hair doing things hair does not do.\n\nMucha had been a broke Czech illustrator in Paris until a poster for Sarah Bernhardt made him famous overnight two years earlier. He spent the rest of his life insisting he was not a decorator but a painter of the Slavic soul. The world loved the decoration anyway.",
+      "pairing": "Fauré's Pavane — the same fin-de-siècle elegance, ornament carrying real feeling underneath.",
+      "image": "mucha-zodiac.jpg",
+      "frameStyle": "float",
+      "collections": ["street"],
+      "music": {
+        "title": "Pavane, Op. 50",
+        "composer": "Gabriel Fauré",
+        "year": "1887",
+        "file": "faure-pavane.mp3",
+        "credit": "Internet Archive"
+      },
+      "credit": "Wikimedia Commons (public domain)"
+    },
+    {
+      "id": "great-wave",
+      "title": "Under the Wave off Kanagawa (The Great Wave)",
+      "artist": "Katsushika Hokusai",
+      "year": "ca. 1830–32",
+      "medium": "Woodblock print",
+      "summary": "Possibly the most reproduced image in the history of art. Hokusai was about seventy when he cut it.",
+      "story": "Three boats of oarsmen flatten themselves as a wave the size of a building breaks over them — and far in the distance, dead center and tiny, sits Mount Fuji, the actual subject of the series. The print comes from Thirty-six Views of Mount Fuji, and its deep blue was a brand-new import: Prussian blue, a synthetic pigment from Europe that Japanese printers had just gotten their hands on.\n\nHokusai was around seventy, signing his work 'the old man crazy about painting.' When these prints reached Paris a generation later, Monet collected them, Debussy kept the Wave on his studio wall while composing La Mer, and Western art was never quite the same.",
+      "pairing": "Umi means 'The Sea' — a traditional Japanese piece recorded on 78rpm, paired with the most famous wave ever printed.",
+      "image": "great-wave.jpg",
+      "frameStyle": "classic",
+      "collections": ["japan"],
+      "music": {
+        "title": "Umi (The Sea)",
+        "composer": "Traditional, koto",
+        "year": "early 20th c.",
+        "file": "umi.mp3",
+        "credit": "Internet Archive, 78rpm collection"
+      },
+      "credit": "The Metropolitan Museum of Art, Open Access (public domain)"
+    },
+    {
+      "id": "red-fuji",
+      "title": "South Wind, Clear Sky (Red Fuji)",
+      "artist": "Katsushika Hokusai",
+      "year": "ca. 1830–32",
+      "medium": "Woodblock print",
+      "summary": "The Great Wave's quiet sibling: Fuji alone at dawn, turned red by the first light of an early autumn morning.",
+      "story": "From the same series as the Great Wave, this is its exact opposite: no drama, no people, no sea — just the mountain, filling the frame, caught at the moment when a south wind and a clear dawn sky turn its flank the color of embers. Three colors do almost all the work.\n\nJapanese viewers knew this effect as a real, rare event worth waiting for, and Hokusai compressed the waiting into a single flat image. Of the Thirty-six Views, collectors have always prized this one alongside the Wave — the loud masterpiece and the quiet one.",
+      "pairing": "The same koto recording as the Wave — one piece of music for the two faces of the same mountain.",
+      "image": "red-fuji.jpg",
+      "frameStyle": "classic",
+      "collections": ["japan"],
+      "music": {
+        "title": "Umi (The Sea)",
+        "composer": "Traditional, koto",
+        "year": "early 20th c.",
+        "file": "umi.mp3",
+        "credit": "Internet Archive, 78rpm collection"
+      },
+      "credit": "The Metropolitan Museum of Art, Open Access (public domain)"
+    },
+    {
+      "id": "sudden-shower",
+      "title": "Sudden Shower over Shin-Ōhashi Bridge and Atake",
+      "artist": "Utagawa Hiroshige",
+      "year": "1857",
+      "medium": "Woodblock print",
+      "summary": "Rain you can hear. Van Gogh loved this print so much he painted his own copy of it, stroke for stroke.",
+      "story": "Pedestrians hunch and scatter across a bridge as a summer downpour catches them in the open — the rain cut into the woodblock as sheets of fine parallel lines, a trick so effective you can almost hear it hiss on the river. The far bank dissolves into wet grey ink. It is from One Hundred Famous Views of Edo, Hiroshige's last great series.\n\nWhen these prints reached Europe, they hit like weather. Van Gogh made a full-size oil copy of this exact image, tracing the bridge and the rain line by line, and the flat colors and cropped compositions of the Floating World rewired Impressionism from the inside.",
+      "pairing": "A koto recording from old Japan — plucked strings and rain on a river.",
+      "image": "sudden-shower.jpg",
+      "frameStyle": "float",
+      "collections": ["japan"],
+      "music": {
+        "title": "Umi (The Sea)",
+        "composer": "Traditional, koto",
+        "year": "early 20th c.",
+        "file": "umi.mp3",
+        "credit": "Internet Archive, 78rpm collection"
+      },
+      "credit": "The Metropolitan Museum of Art, Open Access (public domain)"
+    },
+    {
+      "id": "plum-garden",
+      "title": "Plum Garden at Kamata",
+      "artist": "Utagawa Hiroshige",
+      "year": "1857",
+      "medium": "Woodblock print",
+      "summary": "Plum blossoms seen through plum branches, with a palanquin waiting at the edge — spring as a place you could stand inside.",
+      "story": "Hiroshige puts you inside the orchard: the nearest tree's branches cross the entire view, out of focus the way near things really are, while the garden's visitors and a waiting palanquin drift in the pink haze behind. The gradient sky — rose into white into green — was achieved by hand-wiping ink across the block for every single print.\n\nThis is from One Hundred Famous Views of Edo, finished in the last two years of Hiroshige's life. Van Gogh copied its sibling print directly in oils, and the device of looking through branches became one of Japonisme's great exports to Western painting.",
+      "pairing": "Koto strings, plucked and ringing — the right sound for standing under blossoms.",
+      "image": "plum-garden.jpg",
+      "frameStyle": "float",
+      "collections": ["japan"],
+      "music": {
+        "title": "Umi (The Sea)",
+        "composer": "Traditional, koto",
+        "year": "early 20th c.",
+        "file": "umi.mp3",
+        "credit": "Internet Archive, 78rpm collection"
+      },
+      "credit": "The Metropolitan Museum of Art, Open Access (public domain)"
+    }
+  ]
+}

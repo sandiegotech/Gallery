@@ -1,0 +1,17 @@
+{
+  "layers": [
+    {
+      "filename": "Art.imagestacklayer"
+    },
+    {
+      "filename": "Frame.imagestacklayer"
+    },
+    {
+      "filename": "Back.imagestacklayer"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  }
+}

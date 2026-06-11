@@ -1,0 +1,10 @@
+# Build artifacts
+build/
+DerivedData/
+*.xcuserdatad/
+xcuserdata/
+.DS_Store
+
+# 1953 Deller/Dupré recording — still under copyright; swap for an older or
+# openly licensed transfer before this piece ships anywhere public (see README).
+Gallery/Resources/Music/flow-my-tears.mp3
