@@ -14,6 +14,8 @@ placard you can select to read the full story.
 
 Platforms: **Apple TV (tvOS)**
 
+<img src="docs/gallery-home.png" width="700" alt="The Gallery home screen on Apple TV — four exhibitions: The Mix, The Grand Tour, Art of the Street, The Floating World">
+
 ## Status — in testing
 
 The Gallery is **currently in testing and not yet on the App Store**. The app builds
