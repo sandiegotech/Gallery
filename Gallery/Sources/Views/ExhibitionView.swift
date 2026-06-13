@@ -19,6 +19,8 @@ struct ExhibitionView: View {
     @State private var showIntro = true
     @State private var pendingAdvance = false
     @State private var advanceTask: Task<Void, Never>?
+    @State private var hintVisible = false
+    @State private var hintTask: Task<Void, Never>?
 
     /// Timed pacing, or nil when the room moves on with the music.
     private var dwell: Duration? {
@@ -29,6 +31,16 @@ struct ExhibitionView: View {
         artworks.indices.contains(index) ? artworks[index] : nil
     }
 
+    private var positionLabel: String {
+        artworks.isEmpty ? "" : "\(index + 1) / \(artworks.count)"
+    }
+
+    /// The exclusive wing hangs against its own deep oxblood wall, whatever
+    /// wall the viewer chose elsewhere.
+    private var effectiveTheme: SDITTheme {
+        collection.id == "winedark" ? .wineDarkWall : theme
+    }
+
     var body: some View {
         ZStack {
             WallBackground()
@@ -37,25 +49,43 @@ struct ExhibitionView: View {
                 RoomIntroView(collection: collection, number: number)
                     .transition(.opacity)
             } else if let artwork = current {
-                // Artwork fills the wall; placard hangs beside it at eye level.
-                HStack(alignment: .center, spacing: 0) {
+                // The work fills the wall; the label hangs beside it at eye level.
+                HStack(alignment: .center, spacing: 56) {
                     FramedArtworkView(artwork: artwork)
-                        .frame(maxWidth: .infinity, maxHeight: 860)
-                    PlacardButton(artwork: artwork) { showDetail = true }
-                        .frame(width: 360)
-                        .padding(.leading, 52)
+                        .frame(maxWidth: .infinity, maxHeight: 1000)
+                        .kenBurns()
+                    PlacardButton(artwork: artwork, position: positionLabel) {
+                        showDetail = true
+                    }
+                    .frame(width: 540)
                 }
-                .padding(.horizontal, 80)
-                .padding(.vertical, 50)
+                .padding(.horizontal, 72)
+                .padding(.vertical, 40)
                 .id(artwork.id)
                 .transition(.opacity)
             } else if artworks.isEmpty {
                 Text("This room is being rehung.")
                     .font(.sditDisplay(30, italic: true))
-                    .foregroundStyle(theme.textSecondary)
+                    .foregroundStyle(effectiveTheme.textSecondary)
             }
 
+            // Left/right hint: faint chevrons at the edges of the wall, shown
+            // briefly when the room is ready and after each move.
+            if !showIntro && artworks.count > 1 {
+                HStack {
+                    Image(systemName: "chevron.compact.left")
+                    Spacer()
+                    Image(systemName: "chevron.compact.right")
+                }
+                .font(.system(size: 64, weight: .ultraLight))
+                .foregroundStyle(effectiveTheme.textMetadata)
+                .padding(.horizontal, 30)
+                .opacity(hintVisible ? 0.55 : 0)
+                .animation(.easeInOut(duration: 0.7), value: hintVisible)
+                .allowsHitTesting(false)
+            }
         }
+        .environment(\.sditTheme, effectiveTheme)
         .onMoveCommand { direction in
             switch direction {
             case .left: step(-1)
@@ -74,10 +104,12 @@ struct ExhibitionView: View {
             Task {
                 try? await Task.sleep(for: .seconds(3.6))
                 withAnimation(.easeInOut(duration: 0.9)) { showIntro = false }
+                flashHint()
             }
         }
         .onDisappear {
             advanceTask?.cancel()
+            hintTask?.cancel()
             music.onTrackEnd = nil
             music.fadeOutAndStop()
         }
@@ -105,6 +137,20 @@ struct ExhibitionView: View {
         }
         music.play(current?.music)
         scheduleAdvance()
+        flashHint()
+    }
+
+    /// Briefly surface the left/right chevrons so it's clear the room moves
+    /// with the remote, then let them fade back into the wall.
+    private func flashHint() {
+        guard artworks.count > 1 else { return }
+        hintTask?.cancel()
+        hintVisible = true
+        hintTask = Task {
+            try? await Task.sleep(for: .seconds(3.2))
+            guard !Task.isCancelled else { return }
+            hintVisible = false
+        }
     }
 
     private func scheduleAdvance() {

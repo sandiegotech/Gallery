@@ -24,6 +24,13 @@
       "title": "The Floating World",
       "subtitle": "Japanese prints that changed how the West saw",
       "coverArtworkID": "great-wave"
+    },
+    {
+      "id": "winedark",
+      "title": "The Wine-Dark Sea",
+      "subtitle": "Exclusive Wine-Dark releases — found, not given",
+      "coverArtworkID": "great-wave",
+      "hidden": true
     }
   ],
   "artworks": [
@@ -59,7 +66,7 @@
       "pairing": "Debussy published Clair de Lune a year before this canvas — impressionism in sound and paint, made by countrymen who dissolved their subjects the same way.",
       "image": "water-lilies.jpg",
       "frameStyle": "gilded",
-      "collections": ["museum"],
+      "collections": ["museum", "winedark"],
       "music": {
         "title": "Clair de Lune",
         "composer": "Claude Debussy",
@@ -79,7 +86,7 @@
       "story": "This panel belonged to a cycle of six paintings of the months, made for the house of a wealthy Antwerp merchant. It shows late summer: wheat being scythed, bread and porridge under the pear tree, one harvester flat on his back, asleep with his mouth open.\n\nWhat made it revolutionary is what it ignores. There is no saint, no myth, no king — the landscape and the labor are the whole story. Art historians point to this picture as a hinge in Western art: the moment when watching ordinary people live became enough.",
       "pairing": "Dowland's lute music belongs to the same world, a few decades on — music for rooms lit by the same candles.",
       "image": "harvesters.jpg",
-      "frameStyle": "classic",
+      "frameStyle": "dutch",
       "collections": ["museum"],
       "music": {
         "title": "Flow My Tears",
@@ -100,7 +107,7 @@
       "story": "Caravaggio painted this for Cardinal del Monte, his first great patron, who kept the young painter in his palace and his concerts well staffed. It is not a portrait of a performance but of the moment before one — strings being tuned, music being checked, nobody yet playing.\n\nThe lutenist's eyes are wet, the costumes are vaguely classical, and the cornetto player looking out at us is Caravaggio's own face. Within a few years he would abandon this softness for the violent light and darkness that made him famous, but here he is still — almost — a musician among musicians.",
       "pairing": "Dowland published Flow My Tears within three years of this canvas. This is, as exactly as we can manage, what these boys were about to play.",
       "image": "musicians.jpg",
-      "frameStyle": "gilded",
+      "frameStyle": "baroque",
       "collections": ["museum"],
       "music": {
         "title": "Flow My Tears",
@@ -121,7 +128,7 @@
       "story": "A woman opens a window with one hand and holds a silver pitcher with the other, suspended between two small actions on an ordinary morning in Delft. Nothing happens — and the nothing is the point. Vermeer slowed domestic life down until it became sacred.\n\nLook at the light: it comes through the glass, lands on the white linen hood, drops into the brass basin, and bounces blue from the tablecloth onto the pitcher's underside. Vermeer painted perhaps two canvases a year and died poor; this was the first of his paintings to ever reach America.",
       "pairing": "A lute song from the previous generation — the kind of music a Delft household with a virginal in the parlor would have known by heart.",
       "image": "young-woman-pitcher.jpg",
-      "frameStyle": "classic",
+      "frameStyle": "dutch",
       "collections": ["museum"],
       "music": {
         "title": "Flow My Tears",
@@ -142,8 +149,8 @@
       "story": "Virginie Gautreau was an American-born society beauty in Paris, famous for her lavender powder and her profile. Sargent pursued her for the commission, chasing prestige; what he got was a scandal. At the 1884 Salon, the dress strap he had painted slipping off her right shoulder caused such an uproar that her family begged him to withdraw the painting.\n\nHe repainted the strap upright, kept the canvas in his studio for thirty years, and finally sold it to the Met on one condition — that the museum disguise her name. The pose, the profile, the black satin against that powdered skin: what scandalized one century became the swagger portrait every century since has imitated.",
       "pairing": "Fauré's Pavane premiered in the same Paris these two scandalized, three years later — elegant, cool, and slightly dangerous.",
       "image": "madame-x.jpg",
-      "frameStyle": "gilded",
-      "collections": ["museum"],
+      "frameStyle": "baroque",
+      "collections": ["museum", "winedark"],
       "music": {
         "title": "Pavane, Op. 50",
         "composer": "Gabriel Fauré",
@@ -163,7 +170,7 @@
       "story": "Mäda Primavesi was nine when Klimt painted her, the daughter of a Viennese banker and a former actress who were among his most devoted patrons. Klimt made dozens of preparatory sketches trying to find the pose; Mäda, by her own later account, simply stood like that, and he gave up trying to change her.\n\nThe result is one of the most self-possessed children in the history of portraiture — feet planted, hands behind her back, dead-level gaze, the whole shimmering Secession garden flattening into wallpaper behind her. She lived to be ninety-six and never stopped sounding like the girl in the picture.",
       "pairing": "Satie's Gnossiennes float in the same perfumed, slightly off-kilter air as Klimt's Vienna — beauty with one eyebrow raised.",
       "image": "mada-primavesi.jpg",
-      "frameStyle": "modern",
+      "frameStyle": "secession",
       "collections": ["museum"],
       "music": {
         "title": "Gnossienne No. 3",
@@ -268,8 +275,8 @@
       "story": "Three boats of oarsmen flatten themselves as a wave the size of a building breaks over them — and far in the distance, dead center and tiny, sits Mount Fuji, the actual subject of the series. The print comes from Thirty-six Views of Mount Fuji, and its deep blue was a brand-new import: Prussian blue, a synthetic pigment from Europe that Japanese printers had just gotten their hands on.\n\nHokusai was around seventy, signing his work 'the old man crazy about painting.' When these prints reached Paris a generation later, Monet collected them, Debussy kept the Wave on his studio wall while composing La Mer, and Western art was never quite the same.",
       "pairing": "Umi means 'The Sea' — a traditional Japanese piece recorded on 78rpm, paired with the most famous wave ever printed.",
       "image": "great-wave.jpg",
-      "frameStyle": "classic",
-      "collections": ["japan"],
+      "frameStyle": "float",
+      "collections": ["japan", "winedark"],
       "music": {
         "title": "Umi (The Sea)",
         "composer": "Traditional, koto",
@@ -289,8 +296,8 @@
       "story": "From the same series as the Great Wave, this is its exact opposite: no drama, no people, no sea — just the mountain, filling the frame, caught at the moment when a south wind and a clear dawn sky turn its flank the color of embers. Three colors do almost all the work.\n\nJapanese viewers knew this effect as a real, rare event worth waiting for, and Hokusai compressed the waiting into a single flat image. Of the Thirty-six Views, collectors have always prized this one alongside the Wave — the loud masterpiece and the quiet one.",
       "pairing": "The same koto recording as the Wave — one piece of music for the two faces of the same mountain.",
       "image": "red-fuji.jpg",
-      "frameStyle": "classic",
-      "collections": ["japan"],
+      "frameStyle": "float",
+      "collections": ["japan", "winedark"],
       "music": {
         "title": "Umi (The Sea)",
         "composer": "Traditional, koto",
@@ -311,7 +318,7 @@
       "pairing": "A koto recording from old Japan — plucked strings and rain on a river.",
       "image": "sudden-shower.jpg",
       "frameStyle": "float",
-      "collections": ["japan"],
+      "collections": ["japan", "winedark"],
       "music": {
         "title": "Umi (The Sea)",
         "composer": "Traditional, koto",

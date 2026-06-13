@@ -18,11 +18,21 @@ final class SettingsStore: ObservableObject {
     @Published var dwell: Int {
         didSet { UserDefaults.standard.set(dwell, forKey: "dwellSeconds") }
     }
+    /// Whether the viewer has found the door to the Wine-Dark release.
+    @Published var wineDarkUnlocked: Bool {
+        didSet { UserDefaults.standard.set(wineDarkUnlocked, forKey: "wineDarkUnlocked") }
+    }
+    /// Whether the first-run note (turn off the system screen saver) has shown.
+    @Published var seenScreensaverTip: Bool {
+        didSet { UserDefaults.standard.set(seenScreensaverTip, forKey: "seenScreensaverTip") }
+    }
 
     init() {
         let defaults = UserDefaults.standard
         wall = defaults.string(forKey: "wall") ?? "ink"
         musicOn = defaults.object(forKey: "musicEnabled") as? Bool ?? true
         dwell = defaults.object(forKey: "dwellSeconds") as? Int ?? 0
+        wineDarkUnlocked = defaults.bool(forKey: "wineDarkUnlocked")
+        seenScreensaverTip = defaults.bool(forKey: "seenScreensaverTip")
     }
 }

@@ -44,6 +44,31 @@ struct ArtImage: View {
     }
 }
 
+/// A slow, museum-quiet drift — a gentle zoom and pan that gives a still
+/// image a breath of life on a television, the way Ken Burns did for stills
+/// on film. Honors Reduce Motion (then it simply doesn't move).
+private struct KenBurns: ViewModifier {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var drift = false
+
+    func body(content: Content) -> some View {
+        content
+            .scaleEffect(drift ? 1.045 : 1.0)
+            .offset(x: drift ? 9 : 0, y: drift ? -6 : 0)
+            .onAppear {
+                guard !reduceMotion else { return }
+                withAnimation(.easeInOut(duration: 24).repeatForever(autoreverses: true)) {
+                    drift = true
+                }
+            }
+    }
+}
+
+extension View {
+    /// Gives a hung work a slow Ken Burns drift.
+    func kenBurns() -> some View { modifier(KenBurns()) }
+}
+
 /// Wraps an artwork in its frame chrome and hangs it with a shadow.
 struct FramedArtworkView: View {
     @Environment(\.sditTheme) private var theme
@@ -89,6 +114,77 @@ struct FramedArtworkView: View {
                 )
                 .padding(3)
                 .background(Color(red: 0.30, green: 0.22, blue: 0.08))
+
+        case .baroque:
+            // A deep, ornate Salon gold: a bright inner ogee, a dark carved
+            // recess, then a broad antiqued outer course. The frame Caravaggio
+            // and Sargent's Madame X would actually hang in.
+            image
+                .padding(3)
+                .background(Color(red: 0.16, green: 0.11, blue: 0.03))
+                .padding(11)
+                .background(
+                    LinearGradient(
+                        colors: [
+                            Color(red: 0.95, green: 0.83, blue: 0.51),
+                            Color(red: 0.66, green: 0.50, blue: 0.21),
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
+                .padding(8)
+                .background(Color(red: 0.20, green: 0.14, blue: 0.05))
+                .padding(22)
+                .background(
+                    LinearGradient(
+                        colors: [
+                            Color(red: 0.80, green: 0.64, blue: 0.30),
+                            Color(red: 0.50, green: 0.37, blue: 0.14),
+                            Color(red: 0.88, green: 0.73, blue: 0.41),
+                            Color(red: 0.56, green: 0.42, blue: 0.17),
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+                .padding(4)
+                .background(Color(red: 0.18, green: 0.12, blue: 0.04))
+
+        case .dutch:
+            // Dutch Golden Age: an ebonized black frame with the thin gold
+            // sight-line that catches the light at the picture's edge.
+            image
+                .padding(3)
+                .background(Color(red: 0.56, green: 0.44, blue: 0.18))
+                .padding(24)
+                .background(
+                    LinearGradient(
+                        colors: [
+                            Color(red: 0.11, green: 0.10, blue: 0.09),
+                            Color(red: 0.04, green: 0.035, blue: 0.03),
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+                .padding(2)
+                .background(Color.black)
+
+        case .secession:
+            // Vienna Secession: a wide, flat, matte-gold frame ruled with thin
+            // incised lines — the geometry Klimt and Hoffmann favored.
+            image
+                .padding(3)
+                .background(Color(red: 0.16, green: 0.13, blue: 0.06))
+                .padding(7)
+                .background(Color(red: 0.79, green: 0.65, blue: 0.31))
+                .padding(2)
+                .background(Color(red: 0.16, green: 0.13, blue: 0.06))
+                .padding(18)
+                .background(Color(red: 0.84, green: 0.70, blue: 0.35))
+                .padding(2)
+                .background(Color(red: 0.16, green: 0.13, blue: 0.06))
 
         case .classic:
             image

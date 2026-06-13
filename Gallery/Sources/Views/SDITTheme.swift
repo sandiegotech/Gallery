@@ -68,6 +68,22 @@ struct SDITTheme: Equatable {
         artShadow: Color.black.opacity(0.80)
     )
 
+    /// The Wine-Dark wing: a deep oxblood wall, lit warm and gilt — reserved
+    /// for the exclusive releases hidden behind the colophon.
+    static let wineDarkWall = SDITTheme(
+        isDark: true,
+        canvas: Color(red: 38 / 255, green: 11 / 255, blue: 21 / 255),            // #260B15
+        surface: Color(red: 48 / 255, green: 15 / 255, blue: 27 / 255),           // #300F1B
+        surfaceFocused: Color(red: 70 / 255, green: 22 / 255, blue: 38 / 255),    // #461626
+        textPrimary: paper.opacity(0.94),
+        textSecondary: Color(red: 240 / 255, green: 222 / 255, blue: 226 / 255).opacity(0.66),
+        textMetadata: Color(red: 222 / 255, green: 178 / 255, blue: 142 / 255).opacity(0.55),
+        gold: Color(red: 212 / 255, green: 175 / 255, blue: 92 / 255),            // #D4AF5C
+        marine: Color(red: 197 / 255, green: 122 / 255, blue: 132 / 255),         // dusky rose
+        hairline: Color(red: 212 / 255, green: 175 / 255, blue: 92 / 255).opacity(0.20),
+        artShadow: Color.black.opacity(0.72)
+    )
+
     /// A muted warm grey — the light wall, dimmed so the work carries it.
     static let stoneWall = SDITTheme(
         isDark: false,

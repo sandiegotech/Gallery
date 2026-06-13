@@ -32,6 +32,7 @@
 		8584A3833C17B361C5DFCC0A /* musicians.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FE16B22842122A8A1381D9B /* musicians.jpg */; };
 		85FAAB7AC8A12F975501ECD7 /* flow-my-tears.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8308E5AC3DF35B827F04733 /* flow-my-tears.mp3 */; };
 		919085FF260FCBF79A2C364D /* plum-garden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E9090F9DCBF1BEA0C921C6B /* plum-garden.jpg */; };
+		9543E3C505FBAB84E884C90A /* WineDarkReleaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39395EABF5C2014EB3732DBD /* WineDarkReleaseView.swift */; };
 		9CF444B0C13A2D76516F59CD /* chat-noir.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1CA9954DF4FA07B4D76D7322 /* chat-noir.jpg */; };
 		A68FC10B9F5781A69DA97DEF /* FramedArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E4FAF6B038E83BF77699A /* FramedArtworkView.swift */; };
 		B0D2BAC53A5AE0B3CDE74C1D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FA7C8CAF70D0E75C0CE91C7 /* manifest.json */; };
@@ -69,6 +70,7 @@
 		2E9090F9DCBF1BEA0C921C6B /* plum-garden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "plum-garden.jpg"; sourceTree = "<group>"; };
 		2FA7C8CAF70D0E75C0CE91C7 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		3426B59EBB1C2628B9A3BB1F /* madame-x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "madame-x.jpg"; sourceTree = "<group>"; };
+		39395EABF5C2014EB3732DBD /* WineDarkReleaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineDarkReleaseView.swift; sourceTree = "<group>"; };
 		4D4FB5DF461506CD318A27EA /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		536798E348557F6E8A7C30E4 /* divan-japonais.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "divan-japonais.jpg"; sourceTree = "<group>"; };
 		58246F8D3B1DEDFAA401E6E7 /* gymnopedie-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "gymnopedie-1.mp3"; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				71893B6544F17D61714A90CF /* SDITTheme.swift */,
 				C7753D201C0546F56FBAF9BF /* SettingsView.swift */,
 				B163B5202F35DD43C734D4F7 /* WallBackground.swift */,
+				39395EABF5C2014EB3732DBD /* WineDarkReleaseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				D9DB3B3B7B4B4086FA465211 /* SettingsStore.swift in Sources */,
 				46EB1BD68C683860BA169FA3 /* SettingsView.swift in Sources */,
 				2BFFCF8551CEB6921BA0049D /* WallBackground.swift in Sources */,
+				9543E3C505FBAB84E884C90A /* WineDarkReleaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4VSTWG394B;
 				INFOPLIST_FILE = Gallery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -444,7 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4VSTWG394B;
 				INFOPLIST_FILE = Gallery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

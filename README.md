@@ -117,9 +117,12 @@ under the same keys the debug launch arguments use, so `-wall stone`,
 Everything is driven by [manifest.json](Gallery/Resources/manifest.json) — collections,
 artworks, placard text, frame styles, and music pairings. Images live in
 `Gallery/Resources/Media/`, tracks in `Gallery/Resources/Music/`. To add a piece, drop
-in a JPEG + MP3 and add an entry to the manifest. Frame styles: `gilded`, `classic`
-(dark wood), `modern`, `float` (ivory mat — posters/prints), `none` (street art,
-painted straight on the wall).
+in a JPEG + MP3 and add an entry to the manifest. Frame styles, each chosen to
+match the work's era: `gilded` (Impressionist gilt), `baroque` (carved Salon
+gold), `dutch` (ebonized black with a gold sight-line), `secession` (flat Klimt
+gold), `classic` (dark wood), `modern` (thin black), `float` (ivory mat —
+posters/prints), `none` (street art, painted straight on the wall). Unknown
+values fall back to `classic`.
 
 ### Streaming later (already wired)
 
@@ -141,7 +144,6 @@ public. The fetch scripts that built this content set are in `tools/`.
 
 ## Ideas for later
 
-- Slow Ken Burns drift on each artwork (museums don't move, but TVs like it)
 - A top-shelf extension surfacing "tonight's exhibition"
 - Time-aware exhibitions (calm prints in the morning, posters at night)
 - "Save to my collection" + a favorites room
