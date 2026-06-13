@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0 (build 11) — 2026-06-13
+
+- App icon and launch image: deep navy ("Ink") wall with a lit center, a cream
+  picture-frame mark, and a gold sun — replacing the plain paper tile
+
 ## 1.0 (build 10) — 2026-06-13
 
 - Lobby imprint now reads simply "Built by the San Diego Institute of Technology"
