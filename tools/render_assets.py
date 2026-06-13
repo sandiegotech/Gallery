@@ -21,6 +21,18 @@ INK = (16, 28, 44, 255)        # #101C2C
 PAPER_TILE = (244, 241, 232, 255)  # #F4F1E8 — icon tile
 PAPER = (252, 251, 248, 255)   # #FCFBF8 — canvas
 
+# App icon palette: the mark sits cream-on-deep, lit like the gallery wall,
+# with a single gold sun. Switch ICON_STYLE to recolor the whole icon + launch.
+# Each palette is (top, bottom, spotlight) — the spotlight is an in-hue lift so
+# the centre glows without washing the colour out to grey.
+ICON_STYLE = "ink"             # "ink" (navy/blue) or "charcoal"
+ICON_PALETTES = {
+    "ink":      ((28, 50, 86), (8, 15, 30), (58, 96, 152)),    # #1C3256 → #080F1E
+    "charcoal": ((56, 53, 49), (20, 19, 17), (98, 93, 86)),    # #383531 → #141311
+}
+ICON_MARK = (244, 241, 232, 255)   # warm paper — frame + hills
+ICON_SUN = (218, 182, 96, 255)     # brand gold — the sun
+
 SS = 4  # supersample factor
 
 
@@ -36,8 +48,9 @@ def draw_frame(draw, cx, cy, grid, color=INK):
         radius=w / 2, outline=color, width=max(1, round(w)))
 
 
-def draw_landscape(draw, cx, cy, grid, color=INK):
+def draw_landscape(draw, cx, cy, grid, color=INK, sun_color=None):
     """The work inside the frame: a line of hills and a sun. Two elements."""
+    sun_color = sun_color or color
     def pt(x, y):
         return (cx + (x - 12) * grid, cy + (y - 12) * grid)
     # Hills — one smooth swell across the lower half, drawn as a stamped
@@ -52,7 +65,7 @@ def draw_landscape(draw, cx, cy, grid, color=INK):
     # The sun
     r = 1.0 * grid
     sx, sy = pt(16.1, 9.2)
-    draw.ellipse([sx - r, sy - r, sx + r, sy + r], fill=color)
+    draw.ellipse([sx - r, sy - r, sx + r, sy + r], fill=sun_color)
 
 
 def draw_mark(draw, cx, cy, grid, color=INK):
@@ -79,19 +92,39 @@ def contents(path, payload):
     path.write_text(json.dumps(payload, indent=2))
 
 
-def back_layer(w, h):
-    return Image.new("RGBA", (w, h), PAPER_TILE)
+def _vgrad(w, h, top, bot):
+    """A vertical top→bottom gradient as an RGB image."""
+    col = Image.new("RGB", (1, h))
+    px = col.load()
+    for y in range(h):
+        t = y / max(1, h - 1)
+        px[0, y] = tuple(round(top[i] + (bot[i] - top[i]) * t) for i in range(3))
+    return col.resize((w, h))
+
+
+def back_layer(w, h, style=None):
+    """The icon tile: a deep gallery-wall gradient with a soft in-hue spotlight
+    where the mark hangs."""
+    top, bot, spot = ICON_PALETTES[style or ICON_STYLE]
+    base = _vgrad(w, h, top, bot).convert("RGBA")
+    glow = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(glow).ellipse(
+        [w * 0.5 - w * 0.58, -h * 0.42, w * 0.5 + w * 0.58, h * 0.82], fill=130)
+    glow = glow.filter(ImageFilter.GaussianBlur(h * 0.17))
+    light = Image.new("RGBA", (w, h), spot + (0,))
+    light.putalpha(glow)
+    return Image.alpha_composite(base, light)
 
 
 def frame_layer(w, h):
     def paint(d, W, H):
-        draw_frame(d, W / 2, H / 2, grid=H * 0.030)
+        draw_frame(d, W / 2, H / 2, grid=H * 0.030, color=ICON_MARK)
     return render((w, h), paint)
 
 
 def art_layer(w, h):
     def paint(d, W, H):
-        draw_landscape(d, W / 2, H / 2, grid=H * 0.030)
+        draw_landscape(d, W / 2, H / 2, grid=H * 0.030, color=ICON_MARK, sun_color=ICON_SUN)
     return render((w, h), paint)
 
 
@@ -162,16 +195,6 @@ HANG = [
 
 WALL_TOP = (236, 230, 219)
 WALL_BOT = (208, 199, 183)
-
-
-def _vgrad(w, h, top, bot):
-    """A vertical top→bottom gradient as an RGB image."""
-    col = Image.new("RGB", (1, h))
-    px = col.load()
-    for y in range(h):
-        t = y / max(1, h - 1)
-        px[0, y] = tuple(round(top[i] + (bot[i] - top[i]) * t) for i in range(3))
-    return col.resize((w, h))
 
 
 def _band(w, h, top, bot):
@@ -355,14 +378,17 @@ for name, w, h, images in SHELVES:
         {"filename": "shelf@2x.png", "idiom": "tv", "scale": "2x"},
     ]})
 
-# ---- Launch image: paper, the mark alone, centered ----
+# ---- Launch image: the icon's wall, the mark alone, centered ----
 
 
 def launch(w, h):
+    """Match the icon so the open is seamless: deep wall, cream mark, gold sun."""
+    img = back_layer(w, h)
     def paint(d, W, H):
-        d.rectangle([0, 0, W, H], fill=PAPER)
-        draw_mark(d, W / 2, H / 2, grid=H * 0.0125)  # mark ~ 23% of screen height
-    return render((w, h), paint)
+        draw_frame(d, W / 2, H / 2, grid=H * 0.0125, color=ICON_MARK)
+        draw_landscape(d, W / 2, H / 2, grid=H * 0.0125, color=ICON_MARK, sun_color=ICON_SUN)
+    img.alpha_composite(render((w, h), paint))  # mark ~ 23% of screen height
+    return img
 
 
 ldir = CATALOG / "LaunchImage.launchimage"
@@ -375,11 +401,15 @@ contents(ldir / "Contents.json", {"images": [
      "minimum-system-version": "11.0", "orientation": "landscape", "scale": "2x"},
 ]})
 
-# Preview composite for eyeballing: icon as it will appear
-preview = Image.new("RGBA", (400, 240), PAPER_TILE)
-preview.alpha_composite(frame_layer(400, 240))
-preview.alpha_composite(art_layer(400, 240))
-save(preview, Path("/tmp/icon-preview.png"))
+# Preview composites for eyeballing: the icon in both palettes.
+def icon_preview(style, w=400, h=240):
+    img = back_layer(w, h, style)
+    img.alpha_composite(frame_layer(w, h))
+    img.alpha_composite(art_layer(w, h))
+    return img
+
+save(icon_preview("ink"), Path("/tmp/icon-ink.png"))
+save(icon_preview("charcoal"), Path("/tmp/icon-charcoal.png"))
 save(top_shelf(2320, 720, HANG), Path("/tmp/shelf-preview.png"))
 
-print("Asset catalog written to", CATALOG)
+print("Asset catalog written to", CATALOG, "(icon style:", ICON_STYLE + ")")
